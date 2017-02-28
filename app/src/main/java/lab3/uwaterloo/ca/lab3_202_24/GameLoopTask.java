@@ -30,7 +30,7 @@ public class GameLoopTask extends TimerTask {
                 new Runnable(){
                     public void run(){
 
-                        Log.d(TAG, "run: " + count++);      // for testing only
+                        Log.d(TAG, "run: " + count++);      // (current line for testing only) add in movement direction from lab two, grabs direction and cues animation accordingly
                     }
                 }
         );
