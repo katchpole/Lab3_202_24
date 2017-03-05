@@ -53,3 +53,5 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+*.bin
+.gradle/2.14.1/taskArtifacts/cache.properties.lock
