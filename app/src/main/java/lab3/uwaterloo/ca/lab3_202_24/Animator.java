@@ -1,5 +1,7 @@
 package lab3.uwaterloo.ca.lab3_202_24;
 
+import android.util.Log;
+
 /**
  * Created by patri on 2017-03-05.
  */
@@ -34,6 +36,7 @@ public class Animator {
         int cx = contextObject.getPixelX();
         int cy = contextObject.getPixelY();
 
+        Log.d("CX", String.format("%d %d", cx, targetX));
         int dx = cx - targetX;
         int dy = cy - targetY;
 
