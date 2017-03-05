@@ -8,13 +8,13 @@ import android.widget.RelativeLayout;
  * Created by Alex on 2017-03-05.
  */
 
-public class GameBlock extends ImageView {
+public class GameBlock extends ImageView implements Movement {
 
 
 
     private float IMAGE_SCALE = 0.5f;       //custom scaling to fit image into background grid
-    private static int myCoordX = 0;
-    private static int myCoordY = 0;
+    private int myCoordX = 0;
+    private int myCoordY = 0;
 
 
 
@@ -30,11 +30,10 @@ public class GameBlock extends ImageView {
 
 
 
-        myCoordX = coordX;
-        myCoordY = coordY;
 
-        this.setX(myCoordX-69);     //Offset to match image coord to background(0,0) is actually (-69, -69)
-        this.setY(myCoordY-69);
+
+        setPixelX(coordX);     //Offset to match image coord to background(0,0) is actually (-69, -69)
+        setPixelY(coordY);
 
 
 
@@ -43,4 +42,26 @@ public class GameBlock extends ImageView {
 
     }
 
+    @Override
+    public void setPixelX(int x) {
+        this.setX(x-69);
+        myCoordX = x;
+    }
+
+    @Override
+    public void setPixelY(int y) {
+        this.setY(y-69);
+        myCoordY = y;
+    }
+
+    @Override
+    public int getPixelX() {
+
+        return myCoordX;
+    }
+
+    @Override
+    public int getPixelY() {
+        return myCoordY;
+    }
 }

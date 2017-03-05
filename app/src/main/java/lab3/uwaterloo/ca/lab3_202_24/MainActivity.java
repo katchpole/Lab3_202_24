@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         layout.getLayoutParams().height = REL_LAYOUT_SIDE_LENGTH;
         layout.setBackgroundResource(R.drawable.gameboard);
 
-        accelerationHandler = new AccelerationHandler(getApplicationContext(), layout, "acceleration", this);
+
 
         textViewGestureStatus = new TextView(getApplicationContext());
         textViewGestureStatus.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 //testing for timer class
         Timer timerTest = new Timer();
-        GameLoopTask testTask1 = new GameLoopTask(this, layout, getApplicationContext());
-        timerTest.schedule(testTask1, 1000, 1000);
+        GameLoopTask testTask1 = new GameLoopTask(this, layout, getApplicationContext(), this);
+        timerTest.schedule(testTask1, 50, 50);
 
 
-
+        accelerationHandler = new AccelerationHandler(getApplicationContext(), layout, "acceleration", testTask1); //send testtask1 to acceleration handler
     }
 
     @Override
