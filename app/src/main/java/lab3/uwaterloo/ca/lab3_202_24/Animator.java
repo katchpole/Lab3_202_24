@@ -47,7 +47,7 @@ public class Animator {
             contextObject.setPixelX(targetX);
             Vx = 0;
         }else{
-            contextObject.setPixelY((int)(cx + Vx));
+            contextObject.setPixelX((int)(cx + Vx));
         }
         
         if (Math.abs(dy) < Math.abs(Vy)){
