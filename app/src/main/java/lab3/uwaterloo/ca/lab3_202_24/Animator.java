@@ -37,8 +37,7 @@ public class Animator {
     public void tick(){
         int cx = contextObject.getPixelX();
         int cy = contextObject.getPixelY();
-
-        Log.d("CX", String.format("%d %d", cx, targetX));
+        
         int dx = targetX - cy;
         int dy = targetY - cy;
 
