@@ -19,10 +19,13 @@ public class GameLoopTask extends TimerTask {
     Context myContext;
     RelativeLayout myRL;
 
+
     public GameLoopTask(Activity myActivity1, RelativeLayout myRL1, Context myContext1){
         myActivity = myActivity1;
         myContext = myContext1;
         myRL = myRL1;
+        createBlock();
+
     }
     @Override
     public void run() {
@@ -39,7 +42,7 @@ public class GameLoopTask extends TimerTask {
     }
 
     private void createBlock(){
-        GameBlock newBlock = new GameBlock(myContext, 10, 10); //Or any (x,y) of your choice
+        GameBlock newBlock = new GameBlock(myContext, 0, 0); //Or any (x,y) of your choice
         myRL.addView(newBlock);
     }
 }
