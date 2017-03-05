@@ -2,112 +2,112 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="5d7fff5fdbf9f9365d846df943b2a21809cf0630">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_5bd2697c933d3a6865f71b92c44e1ed27b5b2c8e.jar" />
+        sha1="edec9bc144df3c4b4c1c9d9c77ab1e10985f1a78">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cf3f0f1316b5755b07f6a662001d8bd4d1fa1d02\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_7751f30d63474d32615e9a4256ad91d053da0278.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="9a6640b95cc13ae1ea135557cd2a236c9fb42a0d">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\instant-run_5e644b1ffe432d669136670c6c77605ce8807630.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_7fab45e42527bd51a4a6956671b277105135730e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_4462f5ea5da72a4d891a0f9f79c761dd538daa7c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_9be59a635a0de0ec60273cf76f0cba8d8722d255.jar" />
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_184260ab1f92089bdccff4382a160115a9e28479\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_ecae1f24095255521fd3104d5b63298f7ce9f724.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_6c6450bac7a7ca591fe6ae916eb382a7451ef446.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_26db80adc21d06180280a1111204196a6a12d88c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.2.0_4ccedd3cb0ca3433b296ca062341525c603b4385.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_36765ae51e36b27d30efb205a9c1fab1740464da.jar" />
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_7bde0e9b3a81c80ef27fa81915f40616310be180\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_0addf4c0eb32d8e970d3d031a4ee9c3037c6c23e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_6d679e35d403868c29fa2a7db0a686d2722fb1a2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.2.0_f98bc4710ae7f67d1fedf192f1ee66a9de0f7324\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="C:\Users\alext\AndroidStudioProjects\Lab3_202_24\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.2.0_808da09cdafc8d9904071a938dad6809429b8118.jar" />
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_17e22c6ce7203a156c37324cd5d6f73e5fe40a77\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4459252e3efc670b8a9f815a3a5619bdc3a74e55">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6d45d65a72361c3842aa2d7dd6d6da624eab151c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.2.0_4018b23cfb816416ed0c410006977a7145cfcd63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_b3a6303c11d1029ab10bb57d91ce3d6950e637dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_0372a3a5c6eb07e0f0a71ecca0ec15384a081d11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\patri\Documents\GitHub\Lab3_202_24\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_32b07f4090caf9c158426f08406dfe34cd131ae9\classes.dex" />
     </item>
 
 </items>

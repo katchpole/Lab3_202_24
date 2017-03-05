@@ -8,6 +8,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -45,14 +46,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
-
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int REL_LAYOUT_SIDE_LENGTH = displayMetrics.widthPixels;
 
         //reference Relative layout
         RelativeLayout layout = (RelativeLayout)findViewById(R.id.rel_layout);
-        layout.getLayoutParams().width = 1000;
-        layout.getLayoutParams().height = 1000;
+        layout.getLayoutParams().width = REL_LAYOUT_SIDE_LENGTH;
+        layout.getLayoutParams().height = REL_LAYOUT_SIDE_LENGTH;
         layout.setBackgroundResource(R.drawable.gameboard);
-
 
 
 
