@@ -9,8 +9,8 @@ import android.util.Pair;
 interface Movement{
     public void setX(int x);
     public void setY(int y);
-    public int getX();
-    public int getY();
+    public int getPixelX();
+    public int getPixelY();
 }
 
 public class Animator {
@@ -22,8 +22,8 @@ public class Animator {
     private float acc = (float) 0.5;
     Animator(Movement object){
         this.contextObject = object;
-        targetX = contextObject.getX();
-        targetY = contextObject.getY();
+        targetX = contextObject.getPixelX();
+        targetY = contextObject.getPixelY();
         ratio = 0;
     }
 
@@ -33,8 +33,8 @@ public class Animator {
     }
 
     public void tick(){
-        int cx = contextObject.getX();
-        int cy = contextObject.getY();
+        int cx = contextObject.getPixelX();
+        int cy = contextObject.getPixelY();
 
         int dx = cx - targetX;
         int dy = cy - targetY;
