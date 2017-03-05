@@ -43,14 +43,14 @@ public class Animator {
         Vx += acc * dx/Math.abs(dx);
         Vy += acc * dy/Math.abs(dy);
 
-        if (Math.abs(dx) < Vx){
+        if (Math.abs(dx) < Math.abs(Vx)){
             contextObject.setPixelX(targetX);
             Vx = 0;
         }else{
             contextObject.setPixelY((int)(cx + Vx));
         }
         
-        if (Math.abs(dy) < Vy){
+        if (Math.abs(dy) < Math.abs(Vy)){
             contextObject.setPixelY(targetY);
             Vy = 0;
         }else{
