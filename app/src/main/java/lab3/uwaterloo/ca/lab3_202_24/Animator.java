@@ -20,6 +20,8 @@ public class Animator {
 
     private float Vx, Vy;
     private float acc = (float) 0.5;
+
+    private float lastDx, lastDy;
     Animator(Movement object){
         this.contextObject = object;
         targetX = contextObject.getPixelX();
@@ -43,18 +45,21 @@ public class Animator {
         Vx += acc * dx/Math.abs(dx);
         Vy += acc * dy/Math.abs(dy);
 
-        if (Math.abs(dx) < Math.abs(Vx)){
+        if (Math.abs(dx) < Math.abs(Vx) || (dx < 0) != (lastDx < 0)){
             contextObject.setPixelX(targetX);
             Vx = 0;
         }else{
             contextObject.setPixelX((int)(cx + Vx));
         }
         
-        if (Math.abs(dy) < Math.abs(Vy)){
+        if (Math.abs(dy) < Math.abs(Vy) || (dy < 0) != (lastDy < 0)){
             contextObject.setPixelY(targetY);
             Vy = 0;
         }else{
             contextObject.setPixelY((int)(cy + Vy));
         }
+
+        lastDx = dx;
+        lastDy = dy;
     }
 }
