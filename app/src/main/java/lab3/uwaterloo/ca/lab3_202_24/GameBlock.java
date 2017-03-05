@@ -12,9 +12,9 @@ public class GameBlock extends ImageView implements Movement {
 
 
 
-    private float IMAGE_SCALE = 0.5f;       //custom scaling to fit image into background grid
-    private int myCoordX = 0;
-    private int myCoordY = 0;
+    private float IMAGE_SCALE = 0.5f;       //custom scaling to fit image into background grid **note scaling image does not change coordinate borders
+    private int myCoordX;
+    private int myCoordY;
 
 
 
@@ -22,42 +22,29 @@ public class GameBlock extends ImageView implements Movement {
         super(myContext);
         this.setImageResource(R.drawable.gameblock);
 
-
-
-
         this.setScaleX(IMAGE_SCALE);
         this.setScaleY(IMAGE_SCALE);
 
-
-
-
-
-        setPixelX(coordX);     //Offset to match image coord to background(0,0) is actually (-69, -69)
+        setPixelX(coordX);
         setPixelY(coordY);
-
-
-
-
-
 
     }
 
     @Override
     public void setPixelX(int x) {
-        this.setX(x-69);
-        myCoordX = x;
+        this.setX(x-69);                //Offset to match image coordinate to background(0,0) is actually (-69, -69)
+        myCoordX = x;                   //sets new image coordinates from animator
     }
 
     @Override
     public void setPixelY(int y) {
-        this.setY(y-69);
-        myCoordY = y;
+        this.setY(y-69);                //Offset to match image coordinate to background(0,0) is actually (-69, -69)
+        myCoordY = y;                   //sets new image coordinates from animator
     }
 
     @Override
     public int getPixelX() {
-
-        return myCoordX;
+        return myCoordX;                //send current coordinates to movement method to be used in animator
     }
 
     @Override
