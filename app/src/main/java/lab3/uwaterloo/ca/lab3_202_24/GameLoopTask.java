@@ -37,4 +37,9 @@ public class GameLoopTask extends TimerTask {
 
 
     }
+
+    private createBlock(){
+        GameBlock newBlock = new GameBlock(myRL, 10, 10); //Or any (x,y) of your choice
+        myRL.addView(newBlock);
+    }
 }
