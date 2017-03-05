@@ -19,8 +19,8 @@ public class GameLoopTask extends TimerTask {
     Context myContext;
     RelativeLayout myRL;
     int blockLayoutIncrement = 243;     // coordinate pixel constant for moving one block up or down
-    private enum STATES{UP, DOWN, LEFT, RIGHT, NO_MOVEMENT};
-    private STATES currentState = STATES.NO_MOVEMENT;
+    private enum gameDirections{UP, DOWN, LEFT, RIGHT, NO_MOVEMENT};
+    private gameDirections currentState = gameDirections.DOWN.NO_MOVEMENT;
 
 
     public GameLoopTask(Activity myActivity1, RelativeLayout myRL1, Context myContext1 ){
@@ -51,7 +51,7 @@ public class GameLoopTask extends TimerTask {
         myRL.addView(newBlock);
     }
 
-    private void setDirection(STATES direction){
+    private void setDirection(gameDirections direction){
         currentState = direction;
         Log.d(TAG, "setDirection: " + direction);
 
