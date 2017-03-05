@@ -18,13 +18,17 @@ public class GameLoopTask extends TimerTask {
     Activity myActivity;
     Context myContext;
     RelativeLayout myRL;
+    int blockLayoutIncrement = 243;     // coordinate pixel constant for moving one block up or down
 
 
-    public GameLoopTask(Activity myActivity1, RelativeLayout myRL1, Context myContext1){
+
+    public GameLoopTask(Activity myActivity1, RelativeLayout myRL1, Context myContext1 ){
         myActivity = myActivity1;
         myContext = myContext1;
         myRL = myRL1;
+
         createBlock();
+
 
     }
     @Override
@@ -33,7 +37,7 @@ public class GameLoopTask extends TimerTask {
                 new Runnable(){
                     public void run(){
 
-                        Log.d(TAG, "run: " + count++);      // for testing only
+                       // Log.d(TAG, "run: " + count++);      // for testing only
                     }
                 }
         );
@@ -42,7 +46,7 @@ public class GameLoopTask extends TimerTask {
     }
 
     private void createBlock(){
-        GameBlock newBlock = new GameBlock(myContext, 0, 0); //Or any (x,y) of your choice
+        GameBlock newBlock = new GameBlock(myContext,0, 0);//top left is (0,0), image scaling offset in GameBlock
         myRL.addView(newBlock);
     }
 }
