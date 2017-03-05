@@ -37,8 +37,8 @@ public class Animator {
         int cy = contextObject.getPixelY();
 
         Log.d("CX", String.format("%d %d", cx, targetX));
-        int dx = cx - targetX;
-        int dy = cy - targetY;
+        int dx = targetX - cy;
+        int dy = targetY - cy;
 
         Vx += acc * dx/Math.abs(dx);
         Vy += acc * dy/Math.abs(dy);
