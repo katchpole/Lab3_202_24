@@ -24,6 +24,7 @@ public class GameLoopTask extends TimerTask implements GestureCallback {
     Vector<Animator> animators = new Vector<>();
     GestureCallback mainCallBack;
     GameBlock currentBlock;
+    Animator animator1;
 
 
     public GameLoopTask(Activity myActivity1, RelativeLayout myRL1, Context myContext1, GestureCallback mainCallBack ){       //Constructor for gameloopTask
@@ -32,7 +33,8 @@ public class GameLoopTask extends TimerTask implements GestureCallback {
         myRL = myRL1;
         this.mainCallBack = mainCallBack;
         createBlock();          //instantiate block
-
+        animator1 = new Animator(currentBlock);
+        animators.add(animator1);
 
     }
     @Override
@@ -44,25 +46,21 @@ public class GameLoopTask extends TimerTask implements GestureCallback {
         //state machine to determine target coordinates for appropriate gestures
         // send target coordinates to animator method for each specific movement
 
-        Animator animator1 = new Animator(currentBlock);
+        switch (CurrentDirection){
+            case UP:
+                animator1.setTarget(animator1.contextObject.getPixelX(),0);
+                break;
 
-
-            switch (CurrentDirection){
-                case UP:
-                    animator1.setTarget(animator1.contextObject.getPixelX(),0);
-                    break;
-
-                case DOWN:
-                    animator1.setTarget(animator1.contextObject.getPixelX(),blockLayoutIncrement*3);
-                    break;
-                case LEFT:
-                    animator1.setTarget(0,animator1.contextObject.getPixelY());
-                    break;
-                case RIGHT:
-                    animator1.setTarget(blockLayoutIncrement*3,animator1.contextObject.getPixelY());
-                    break;
-            }
-        animators.add(animator1);
+            case DOWN:
+                animator1.setTarget(animator1.contextObject.getPixelX(),blockLayoutIncrement*3);
+                break;
+            case LEFT:
+                animator1.setTarget(0,animator1.contextObject.getPixelY());
+                break;
+            case RIGHT:
+                animator1.setTarget(blockLayoutIncrement*3,animator1.contextObject.getPixelY());
+                break;
+        }
     }
 
 
@@ -90,6 +88,7 @@ public class GameLoopTask extends TimerTask implements GestureCallback {
         GameBlock newBlock = new GameBlock(myContext,0, 0);//Instantiates new block at top left = (0,0), image scaling offset in GameBlock.
         myRL.addView(newBlock);     //add new block to relative layout
         currentBlock = newBlock;
+
 
 
 

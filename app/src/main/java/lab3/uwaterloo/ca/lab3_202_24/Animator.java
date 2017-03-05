@@ -16,24 +16,23 @@ interface Movement{
 public class Animator {
     Movement contextObject;
     private int targetX, targetY;
-    private float ratio;
 
     private float Vx, Vy;
-    private float acc = (float) 0.5;
+    private float acc = (float) 2;
 
-    private int lastDx, lastDy;
     Animator(Movement object){
         this.contextObject = object;
         targetX = contextObject.getPixelX();
         targetY = contextObject.getPixelY();
-        ratio = 0;
     }
 
     public void setTarget(int x, int y){
-        targetX = x;
-        targetY = y;
-        Vx = 0;
-        Vy = 0;
+        if (Vx == 0 && Vy == 0) {
+            targetX = x;
+            targetY = y;
+            Vx = 0;
+            Vy = 0;
+        }
     }
 
     public void tick(){
@@ -43,13 +42,20 @@ public class Animator {
         int dx = targetX - cx;
         int dy = targetY - cy;
 
-        Vx += acc * (dx < 0 ? -1 : 1);
-        Vy += acc * (dy < 0 ? -1 : 1);
+        if (dx != 0) {
+            Vx += acc * (dx < 0 ? -1 : 1);
+        }else{
+            Vx = 0;
+        }
+        if (dy != 0) {
+            Vy += acc * (dy < 0 ? -1 : 1);
+        }else{
+            Vy = 0;
+        }
 
         if (Math.abs(dx) < Math.abs((int) (2 * Vx))){
             contextObject.setPixelX(targetX);
             Vx = 0;
-            dx = 0;
         }else{
             contextObject.setPixelX((int)(cx + Vx));
         }
@@ -57,12 +63,8 @@ public class Animator {
         if (Math.abs(dy) < Math.abs((int) (2 * Vy))){
             contextObject.setPixelY(targetY);
             Vy = 0;
-            dy = 0;
         }else{
             contextObject.setPixelY((int)(cy + Vy));
         }
-
-        lastDx = dx;
-        lastDy = dy;
     }
 }

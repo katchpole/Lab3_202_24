@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 //testing for timer class
         Timer timerTest = new Timer();
         GameLoopTask testTask1 = new GameLoopTask(this, layout, getApplicationContext(), this);
-        timerTest.schedule(testTask1, 50, 50);
+        timerTest.schedule(testTask1, 25, 25);
 
 
         accelerationHandler = new AccelerationHandler(getApplicationContext(), layout, "acceleration", testTask1); //send testtask1 to acceleration handler
