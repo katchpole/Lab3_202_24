@@ -11,7 +11,9 @@ interface Movement{
 }
 
 public class Animator {
+    Movement contextObject;
     Animator(Movement object){
-
+        this.contextObject = object;
+        
     }
 }
