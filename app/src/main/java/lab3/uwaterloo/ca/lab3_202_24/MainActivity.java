@@ -8,11 +8,13 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -48,24 +50,23 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        int REL_LAYOUT_SIDE_LENGTH = displayMetrics.widthPixels;
+        int REL_LAYOUT_SIDE_LENGTH = displayMetrics.widthPixels - 100;
 
+        LinearLayout parent = (LinearLayout) findViewById(R.id.parent);
         //reference Relative layout
         RelativeLayout layout = (RelativeLayout)findViewById(R.id.rel_layout);
         layout.getLayoutParams().width = REL_LAYOUT_SIDE_LENGTH;
         layout.getLayoutParams().height = REL_LAYOUT_SIDE_LENGTH;
         layout.setBackgroundResource(R.drawable.gameboard);
 
-
-
-
         accelerationHandler = new AccelerationHandler(getApplicationContext(), layout, "acceleration", this);
 
         textViewGestureStatus = new TextView(getApplicationContext());
         textViewGestureStatus.setGravity(Gravity.CENTER_HORIZONTAL);
         textViewGestureStatus.setTextSize(26);
-        textViewGestureStatus.setTextColor(Color.WHITE);
-        layout.addView(textViewGestureStatus);
+        textViewGestureStatus.setTextColor(Color.BLACK);
+        textViewGestureStatus.setText("%NAN%");
+        parent.addView(textViewGestureStatus);
 
 //testing for timer class
         Timer timerTest = new Timer();
