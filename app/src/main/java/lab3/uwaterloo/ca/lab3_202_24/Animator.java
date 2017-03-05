@@ -40,8 +40,8 @@ public class Animator {
         int dx = cx - targetX;
         int dy = cy - targetY;
 
-        Vx += acc;
-        Vy += acc;
+        Vx += acc * dx/Math.abs(dx);
+        Vy += acc * dy/Math.abs(dy);
 
         if (Math.abs(dx) < Vx){
             contextObject.setPixelX(targetX);
